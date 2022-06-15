@@ -56,7 +56,7 @@ while (!sumEntered) {
     sumEntered = parseInt(prompt(sumMessageError));
 }
 
-let sumIncrease = sumEntered;
+let sumIncrease = 0;
 
 for (let i = 1; i <= sumEntered; i++) {
     if( (i % 2) === 0 ) {
