@@ -90,3 +90,23 @@ for (let i = 1; i <= 50; i++) {
 
 }
 
+
+/*
+6) Вывтдите текущую дату и время, учитывая часовой пояс
+*/
+
+const nowDate = new Date;
+
+const nowDateOptions = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour12: false,
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+    timeZoneName: 'long',
+};
+
+alert(nowDate.toLocaleString('ru-UA', nowDateOptions));
